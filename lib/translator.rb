@@ -5,7 +5,6 @@ require "yaml"
 def load_library(path)
   emoticons_hash ={}
   emoticons = YAML.load_file(path)
-  
   emoticons.each do |key, value|
     emoticons_hash[key] = {:english => value[0], :japanese => value[1]}
   end
