@@ -9,7 +9,7 @@ def load_library(path)
   emoticons = YAML.load_file(path)
   
   emoticons.each do |key, value|
-    
+    emoticons_hash[key] = 
   
 end
 
