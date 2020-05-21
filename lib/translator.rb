@@ -17,9 +17,7 @@ def get_japanese_emoticon(file_path, emoticon)
     if emoticon_library[key][:japanese] == emoticon 
       return key
     end
-    
-  
-  
+    "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning
