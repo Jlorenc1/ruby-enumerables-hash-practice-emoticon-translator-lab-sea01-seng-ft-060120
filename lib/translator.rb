@@ -2,9 +2,9 @@
 require 'pry'
 require "yaml"
 
-def load_library(path)
+def load_library(file_path)
   emoticons_hash ={}
-  emoticons = YAML.load_file(path)
+  emoticons = YAML.load_file(file_path)
   emoticons.each do |key, value|
     emoticons_hash[key] = {:english => value[0], :japanese => value[1]}
   end
